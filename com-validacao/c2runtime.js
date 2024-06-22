@@ -17661,6 +17661,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.TextBox,
 	cr.system_object.prototype.cnds.OnLayoutStart,
 	cr.plugins_.Button.prototype.cnds.OnClicked,
+	cr.system_object.prototype.cnds.CompareVar,
 	cr.plugins_.Browser.prototype.acts.InvokeDownloadString,
 	cr.plugins_.TextBox.prototype.exps.Text,
 	cr.plugins_.NodeWebkit.prototype.cnds.OnSaveDlg,
@@ -17674,5 +17675,8 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.AJAX.prototype.acts.Request,
 	cr.plugins_.filechooser.prototype.exps.FileURLAt,
 	cr.plugins_.AJAX.prototype.cnds.OnComplete,
-	cr.plugins_.AJAX.prototype.exps.LastData
+	cr.plugins_.AJAX.prototype.exps.LastData,
+	cr.plugins_.TextBox.prototype.cnds.OnTextChanged,
+	cr.system_object.prototype.acts.SetVar,
+	cr.plugins_.TextBox.prototype.acts.SetCSSStyle
 ];};
